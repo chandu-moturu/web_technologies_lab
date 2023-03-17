@@ -1,0 +1,43 @@
+body{
+    position: relative;
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 40px 20px;
+    padding: 60px;
+}
+.container-2{
+    width: 500px;
+}
+h1{
+    width: 50%;
+}
+.label{
+    text-align: start;
+    padding: 5px;
+}
+.reg{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  
+  
+}
+input{
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    border: solid 1px grey;
+    padding: 10px 15px;
+
+}
+.btn{
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: aquamarine;
+}

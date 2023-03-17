@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration
+    </title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container-1">
+        <h1>Registration Form</h1>
+        <div class="container-2">
+            
+            <form class="reg" action="" name = 'f' onSubmit="onHandleSubmit();">
+                <label for="first-name" class="label">
+                   First Name:
+                </label>
+                <input type="text" name="fn">
+    
+                <label for="last-name" class="label">
+                   Last Name:
+                </label>
+                <input type="text" required name="ln">
+    
+    
+                <label for="email" class="label">
+                   Email:
+                </label>
+                <input type="email" name="email">
+    
+                <label for="mobile" class="label">
+                   Mobile:
+                </label>
+                <input type="number" name="m" >
+    
+                <label for="password" class="label">
+                   Password:
+                </label>
+                <input type="password" name="pw">
+    
+                <label for="address" class="label" >
+                   Address:
+                </label>
+                <input type="text" required name="address" >
+                <button class="btn" type="submit">submit</button>
+            </form>
+        </div>
+        
+    </div>
+ 
+</body>
+<script type="text/javascript">
+    function onHandleSubmit(){
+       
+        let email = document.f.email.value;
+        let firstName = document.f.fn.value;
+        let mobile = document.f.m.value;
+        let password =document.f.pw.value;
+
+        if(firstName.length <6 )
+        {
+            alert("First name should contain atleast 6 characters")
+        }
+        if(mobile.length!==10)
+        {
+            alert('mobile number should have 10 numbers')
+        }
+        if(password.length<6)
+        {
+            alert('Password must contain atleast 6 letters')
+        }
+
+
+    }
+</script>
+</html>

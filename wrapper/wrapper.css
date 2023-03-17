@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+}
+.nav{
+    margin: 50px 100px;
+    background-color: rgb(47, 44, 44);
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.nav a{
+    text-decoration: none;
+    padding: 8px;
+    color:aqua;
+    transition: .3s;
+}
+.nav a:hover{
+    background-color: grey;
+    border-radius: 5px;
+}
+p{
+    color: red;
+}

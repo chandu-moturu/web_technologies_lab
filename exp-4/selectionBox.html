@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Box</title>
+    <link rel="stylesheet" href="selectionBox.css">
+</head>
+<body>
+    <header style="color:red;">@lab4: Selection Box</header>
+    <nav class="nav">
+        <label for="country">Country </label>
+        <select name="country" id="country" onchange="showInfo()" class="select">
+            <option value="New Delhi">India</option>
+            <option value="Kabul">Afghanistan</option>
+            <option value="Dhaka">Bangladesh</option>
+            <option value="Brasilia">Brazil</option>
+            <option value="Islamabad">Pakistan</option>
+        </select>
+        
+    </nav>
+    <p id="y" class="value"></p>
+</body>
+<script>
+    function showInfo(){
+        x=document.getElementById('country')
+        y.innerHTML = (x[x.selectedIndex].value)
+    }
+
+    
+</script>
+</html>
